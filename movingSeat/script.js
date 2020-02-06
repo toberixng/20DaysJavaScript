@@ -17,8 +17,8 @@ const updateSelectedCount=() =>{
 
 // Movie select event
 movieSelect.addEventListener('change', e => {
-  ticketPrice = +e.target.value;
-  updateSelectedCount();
+   ticketPrice = +e.target.value;
+  // updateSelectedCount();
 })
 
 //Seat click event
