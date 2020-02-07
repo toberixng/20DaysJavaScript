@@ -14,7 +14,7 @@ const updateSelectedCount=() =>{
     [...seats].indexOf(seat)
   );
 
-  console.log(seatsIndex)
+  
 
   const selectedSeatsCount = selectedSeats.length;
   count.innerText = selectedSeatsCount;
