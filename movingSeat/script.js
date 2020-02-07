@@ -12,7 +12,9 @@ const updateSelectedCount=() =>{
 
   const seatsIndex = [...selectedSeats].map(seat => {
     return [...seats].indexOf(seat)
-  })
+  });
+
+  console.log(seatsIndex)
 
   const selectedSeatsCount = selectedSeats.length;
   count.innerText = selectedSeatsCount;
