@@ -41,6 +41,7 @@ function populateUI(){
     });
   }
 
+  const selectedMovieIndex = localStorage.getItem('selectedMovieIndex')
   
 }
 
@@ -65,4 +66,6 @@ container.addEventListener('click', (e) => {
 
 // Ininital count and total set
 updateSelectedCount()
+// Update the UI
+
 
