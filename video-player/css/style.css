@@ -39,37 +39,37 @@ h1 {
   padding: 10px;
 }
 
-/* .controls .btn {
+.controls .btn {
   border: 0;
   background: transparent;
   cursor: pointer;
-} */
+}
 
-/* .controls .fa-play {
+.controls .fa-play {
   color: #28a745;
-} */
+}
 
-/* .controls .fa-stop {
+.controls .fa-stop {
   color: #dc3545;
-} */
+}
 
-/* .controls .fa-pause {
+.controls .fa-pause {
   color: #fff;
-} */
+}
 
-/* .controls .timestamp {
+.controls .timestamp {
   color: #fff;
   font-weight: bold;
   margin-left: 10px;
-} */
+}
 
-/* .btn:focus {
+.btn:focus {
   outline: 0;
-} */
+}
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .screen,
   .controls {
     width: 90%;
   }
-} */
+}
