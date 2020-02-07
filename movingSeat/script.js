@@ -31,7 +31,11 @@ const updateSelectedCount=() =>{
 
 //Get data from local storage and populate UI
 function populateUI(){
-  
+  const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
+
+  if(selectedSeats !== null && selectedSeats.length > 0){
+
+  }
 }
 
 // Movie select event
