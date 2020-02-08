@@ -6,17 +6,17 @@ const timestamp = document.getElementById('timestamp');
 
 // Play & pause video
 function toggleVideoStatus() {
-  return (video.pause) ? video.play() : video.pause()
+  return (video.paused) ? video.play() : video.pause()
 }
+
 
 // update play/pause icon
 function updatePlayIcon() {
-  if(video.paused) {
-    play.innerHTML = '<i class="fa fa-play fa-2x"></i>'
-  } else {
+  return (video.paused) ? 
+    play.innerHTML = '<i class="fa fa-play fa-2x"></i>' :
     play.innerHTML = '<i class="fa fa-pause fa-2x"></i>'
-  } 
 }
+
 
 // Update progress & timestamp
 function updateProgress() {
@@ -36,8 +36,8 @@ function stopVideo(){
 
 // Event Listener
 video.addEventListener('click', toggleVideoStatus);
-video.addEventListener('click', togglePlayIcon);
-video.addEventListener('click', togglePlayIcon);
+video.addEventListener('pause', updatePlayIcon);
+video.addEventListener('play', updatePlayIcon);
 video.addEventListener('timeupdate', updateProgress);
 
 play.addEventListener('click', toggleVideoStatus);
