@@ -19,6 +19,17 @@ function updateProgress() {
   return true;
 }
 
+// Set video time to progress
+function setVideoProgress(){
+  return true;
+}
+
+// Stop video
+function stopVideo(){
+  return true;
+}
+
+
 // Event Listener
 video.addEventListener('click', toggleVideoStatus);
 video.addEventListener('click', togglePlayIcon);
