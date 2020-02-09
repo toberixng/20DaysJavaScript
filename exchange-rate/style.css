@@ -1,13 +1,13 @@
-/* :root {
+:root {
     --primary-color: #5fbaa7;
-  } */
+  }
   
-  /* * {
+  * {
     box-sizing: border-box;
-  } */
+  }
   
-  /* body {
-    background-color: #f4f4f4;
+  body {
+    background-color: #f9f2f9;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -16,37 +16,37 @@
     height: 100vh;
     margin: 0;
     padding: 20px;
-  } */
+  }
   
-  /* h1 {
+  h1 {
     color: var(--primary-color);
-  } */
+  }
   
-  /* p {
+  p {
     text-align: center;
-  } */
+  }
   
-  /* .btn {
+  .btn {
     color: #fff;
     background: var(--primary-color);
     cursor: pointer;
     border-radius: 5px;
     font-size: 12px;
     padding: 5px 12px;
-  } */
+  }
   
-  /* .money-img {
-    width: 150px;
-  } */
+  .money-img {
+    width: 250px;
+  }
   
-  /* .currency {
+  .currency {
     padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  } */
+  }
   
-  /* .currency select {
+  .currency select {
     padding: 10px 20px 10px 10px;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -58,7 +58,7 @@
     background-position: right 10px top 50%, 0, 0;
     background-size: 12px auto, 100%;
     background-repeat: no-repeat;
-  } */
+  }
   
   /* .currency input {
     border: 0;
