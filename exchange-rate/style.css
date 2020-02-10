@@ -60,34 +60,34 @@
     background-repeat: no-repeat;
   }
   
-  /* .currency input {
+  .currency input {
     border: 0;
     background: transparent;
     font-size: 30px;
     text-align: right;
-  } */
+  }
   
-  /* .swap-rate-container {
+  .swap-rate-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  } */
+  }
   
-  /* .rate {
+  .rate {
     color: var(--primary-color);
     font-size: 14px;
     padding: 0 10px;
-  } */
+  }
   
-  /* select:focus,
+  select:focus,
   input:focus,
   button:focus {
     outline: 0;
-  } */
+  }
   
-  /* @media (max-width: 600px) {
+  @media (max-width: 600px) {
     .currency input {
       width: 200px;
     }
-  } */
+  }
   
