@@ -2,20 +2,12 @@
     --primary-color: #5fbaa7;
   }
   
-<<<<<<< HEAD
   * {
-=======
- * {
->>>>>>> 07a6ad4f79346913fed93a2b514efe2eaf2812cc
     box-sizing: border-box;
   }
   
   body {
-<<<<<<< HEAD
     background-color: #f9f2f9;
-=======
-    background-color: #f4f4f4;
->>>>>>> 07a6ad4f79346913fed93a2b514efe2eaf2812cc
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -44,11 +36,7 @@
   }
   
   .money-img {
-<<<<<<< HEAD
     width: 250px;
-=======
-    width: 350px;
->>>>>>> 07a6ad4f79346913fed93a2b514efe2eaf2812cc
   }
   
   .currency {
