@@ -10,7 +10,7 @@ const swap = document.getElementById('swap');
 
 // Fetch exchange rates and update the dom
 function calculate() {
-  const currency_one = currencyEl_one.value; 
+  const currency_one = currencyEl_one.value;
   const currency_two = currencyEl_two.value;
 
   fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
