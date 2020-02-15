@@ -9,7 +9,7 @@
 | Contact Form | How to use form validation | see project |
 | exchange-rate | we consumed exchangerate-api API | see project |
 | movingSeat | moving Seat | see project |
-| video-player | Here we used range input to control the timing of a video ane more | see project |
+| video-player | Here we used range input to control the timing of a video and many more | see project |
 
 
 
