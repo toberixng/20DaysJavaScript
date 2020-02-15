@@ -28,6 +28,7 @@ async function getRandomUser() {
 
 // Add new obj to data arr
 function addData (obj) {
+<<<<<<< HEAD
     data.push(obj);
 
     updateDOM();
@@ -42,4 +43,7 @@ function updateDom(providedData = data) {
         const element = document.createElement('div');
         element.classList.add('person');
     });
+=======
+    data.push(obj)
+>>>>>>> origin/toberixng/gitpod-setup
 }
