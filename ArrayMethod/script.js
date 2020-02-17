@@ -10,14 +10,12 @@ let data = [];
 getRandomUser();
 getRandomUser();
 getRandomUser();
-getRandomUser();
 
 // Fetch random user and add money
 async function getRandomUser() {
     const res = await fetch('https://randomuser.me/api');
     const data = await res.json();
     const user = data.results[0];
-
     const newUser = {
         title: `${user.name.title}`,
         name: `${user.name.first} ${user.name.last}`,
@@ -25,6 +23,15 @@ async function getRandomUser() {
     };
     
     addData(newUser);
+}
+
+// Double everyone's money
+function doubleMoney(){
+    data = data.map(user => {
+        return { ...user };
+    });
+    
+    updateDOM();
 }
 
 // Add new obj to data arr
@@ -39,7 +46,6 @@ function updateDOM(providedData = data) {
     // clear main div
     main.innerHTML = '<h2>Title <strong>Person</strong> Wealth</h2>';
     
-
     providedData.forEach(item => {
         const element = document.createElement('div');
         element.classList.add('person');
@@ -52,4 +58,9 @@ function updateDOM(providedData = data) {
 function formatMoney(number) {
   return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
+
+// Event Listeners
+addUserBtn.addEventListener('click', getRandomUser);
+addUserBtn.addEventListener('click', doubleMoney);
+
 
