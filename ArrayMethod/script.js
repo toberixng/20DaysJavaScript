@@ -38,11 +38,12 @@ function addData (obj) {
 function updateDOM(providedData = data) {
     // clear main div
     main.innerHTML = '<h2>Title <strong>Person</strong> Wealth</h2>';
+    
 
     providedData.forEach(item => {
         const element = document.createElement('div');
         element.classList.add('person');
-        element.innerHTML = `${item.title}<strong>${item.name}</strong> ${item.money}`
+        element.innerHTML = `${item.title}<strong>${item.name}</strong> ${formatMoney(item.money)}`
         main.appendChild(element);
     });
 }
@@ -52,4 +53,3 @@ function formatMoney(number) {
   return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
-console.log(formatMoney())
