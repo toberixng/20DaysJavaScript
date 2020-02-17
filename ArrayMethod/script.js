@@ -15,10 +15,11 @@ getRandomUser();
 async function getRandomUser() {
     const res = await fetch('https://randomuser.me/api');
     const data = await res.json();
-    console.log(data)
+    
     const user = data.results[0];
 
     const newUser = {
+        title: `${user.name.title}`,
         name: `${user.name.first} ${user.name.last}`,
         money: Math.floor(Math.random() * 1000000)
     };
@@ -28,5 +29,20 @@ async function getRandomUser() {
 
 // Add new obj to data arr
 function addData (obj) {
-    data.push(obj)
+    data.push(obj);
+
+    updateDOM();
+}
+
+// Update DOM
+function updateDOM(providedData = data) {
+    // clear main div
+    // main.innerHTML = '<strong>Title</strong> <strong>Person</strong> Wealth</h2>';
+
+    providedData.forEach(item => {
+        const element = document.createElement('div');
+        element.classList.add('person');
+        element.innerHTML = `<strong>${item.title}</strong><strong>${item.name}</strong> ${item.money}`;
+        main.appendChild(element)
+    });
 }
