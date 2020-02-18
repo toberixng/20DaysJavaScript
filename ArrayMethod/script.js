@@ -37,7 +37,6 @@ function doubleMoney() {
 }
 
 // Sort by Richest
-
 function sortByRichest(){
     data.sort((a, b) => {
         return b.money - a.money
@@ -51,6 +50,15 @@ function showMillionaires() {
     data = data.filter(user => user.money > 1000000)
 
     updateDOM();
+}
+
+// Calculate the total wealth
+function calculateWealth () {
+    const wealth = data.reduce((accum, user) => (accum += user.money), 0)
+    
+    const wealthEl = document.createElement('div');
+    wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(wealth)}</strong></h3>`;
+    main.appendChild(wealthEl);
 }
 
 
@@ -68,7 +76,7 @@ function addData (obj) {
     updateDOM();
 }
 
-// Update DOM
+// This function is used to update the DOM
 function updateDOM(providedData = data) {
     // clear main div
     main.innerHTML = '<h2>Title <strong>Person</strong> Wealth</h2>';
@@ -91,5 +99,6 @@ addUserBtn.addEventListener('click', getRandomUser);
 doubleBtn.addEventListener('click', doubleMoney);
 sortBtn.addEventListener('click', sortByRichest);
 showMillionairesBtn.addEventListener('click', showMillionaires);
+calculateWealthBtn.addEventListener('click', calculateWealth);
 
 clearUsersBtn.addEventListener('click', clearUsers);
