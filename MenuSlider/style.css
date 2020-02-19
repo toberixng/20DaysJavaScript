@@ -13,13 +13,13 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 
-body.show-nav {
-  /* Width of nav */
+/* body.show-nav {
+  
   transform: translateX(200px);
-}
+} */
 
 nav {
   background-color: var(--primary-color);
@@ -31,7 +31,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 nav .logo {
@@ -49,44 +49,45 @@ nav ul {
   padding: 0;
   list-style-type: none;
   margin: 0;
-}
-
-nav ul li {
-  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
-  padding: 20px;
-}
-
-nav ul li:first-of-type {
-  border-top: 2px solid rgba(200, 200, 200, 0.1);
-}
-
-nav ul li a {
-  color: #fff;
   text-decoration: none;
 }
+
+/* nav ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+} */
+
+/* nav ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+} */
+
+/* nav ul li a {
+  color: #fff;
+  text-decoration: none;
+} */
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-header {
+/* header {
   background-color: var(--primary-color);
   color: #fff;
   font-size: 130%;
   position: relative;
   padding: 40px 15px;
   text-align: center;
-}
+} */
 
-header h1 {
+/* header h1 {
   margin: 0;
-}
+} */
 
-header p {
+/* header p {
   margin: 30px 0;
-}
+} */
 
-button,
+/* button,
 input[type='submit'] {
   background-color: var(--secondary-color);
   border: 0;
@@ -94,32 +95,32 @@ input[type='submit'] {
   color: #fff;
   cursor: pointer;
   padding: 8px 12px;
-}
+} */
 
-button:focus {
+/* button:focus {
   outline: none;
-}
+} */
 
-.toggle {
+/* .toggle {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 20px;
   left: 20px;
-}
+} */
 
-.cta-btn {
+/* .cta-btn {
   padding: 12px 30px;
   font-size: 20px;
-}
+} */
 
-.container {
+/* .container {
   padding: 15px;
   margin: 0 auto;
   max-width: 100%;
   width: 800px;
-}
+} */
 
-.modal-container {
+/* .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
   position: fixed;
@@ -127,13 +128,13 @@ button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-}
+} */
 
-.modal-container.show-modal {
+/* .modal-container.show-modal {
   display: block;
-}
+} */
 
-.modal {
+/* .modal {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -146,46 +147,46 @@ button:focus {
   width: 400px;
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
-}
+} */
 
-.modal-header {
+/* .modal-header {
   background: var(--primary-color);
   color: #fff;
   padding: 15px;
-}
+} */
 
-.modal-header h3 {
+/* .modal-header h3 {
   margin: 0;
   border-bottom: 1px solid #333;
-}
+} */
 
-.modal-content {
+/* .modal-content {
   padding: 20px;
-}
+} */
 
-.modal-form div {
+/* .modal-form div {
   margin: 15px 0;
-}
+} */
 
-.modal-form label {
+/* .modal-form label {
   display: block;
   margin-bottom: 5px;
-}
+} */
 
-.modal-form .form-input {
+/* .modal-form .form-input {
   padding: 8px;
   width: 100%;
-}
+} */
 
-.close-btn {
+/* .close-btn {
   background: transparent;
   font-size: 25px;
   position: absolute;
   top: 0;
   right: 0;
-}
+} */
 
-@keyframes modalopen {
+/* @keyframes modalopen {
   from {
     opacity: 0;
   }
@@ -193,4 +194,4 @@ button:focus {
   to {
     opacity: 1;
   }
-}
+} */
