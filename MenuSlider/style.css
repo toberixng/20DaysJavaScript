@@ -96,30 +96,30 @@ input[type='submit'] {
   padding: 8px 12px;
 }
 
-/* button:focus {
+button:focus {
   outline: none;
-} */
+}
 
-/* .toggle {
+.toggle {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 20px;
   left: 20px;
-} */
+}
 
-/* .cta-btn {
+.cta-btn {
   padding: 12px 30px;
   font-size: 20px;
-} */
+}
 
-/* .container {
+.container {
   padding: 15px;
   margin: 0 auto;
   max-width: 100%;
   width: 800px;
-} */
+}
 
-/* .modal-container {
+.modal-container {
   background-color: rgba(0, 0, 0, 0.6);
   display: none;
   position: fixed;
@@ -127,13 +127,13 @@ input[type='submit'] {
   left: 0;
   right: 0;
   bottom: 0;
-} */
+}
 
-/* .modal-container.show-modal {
+.modal-container.show-modal {
   display: block;
-} */
+}
 
-/* .modal {
+.modal {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -146,7 +146,7 @@ input[type='submit'] {
   width: 400px;
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
-} */
+}
 
 /* .modal-header {
   background: var(--primary-color);
