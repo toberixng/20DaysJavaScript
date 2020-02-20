@@ -13,13 +13,13 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  /* transition: transform 0.3s ease; */
+  transition: transform 0.3s ease;
 }
 
-/* body.show-nav {
+body.show-nav {
   
   transform: translateX(200px);
-} */
+}
 
 nav {
   background-color: var(--primary-color);
@@ -148,44 +148,44 @@ button:focus {
   animation-duration: var(--modal-duration);
 }
 
-/* .modal-header {
+.modal-header {
   background: var(--primary-color);
   color: #fff;
   padding: 15px;
-} */
+}
 
-/* .modal-header h3 {
+.modal-header h3 {
   margin: 0;
   border-bottom: 1px solid #333;
-} */
+}
 
-/* .modal-content {
+.modal-content {
   padding: 20px;
-} */
+}
 
-/* .modal-form div {
+.modal-form div {
   margin: 15px 0;
-} */
+}
 
-/* .modal-form label {
+.modal-form label {
   display: block;
   margin-bottom: 5px;
-} */
+}
 
-/* .modal-form .form-input {
+.modal-form .form-input {
   padding: 8px;
   width: 100%;
-} */
+}
 
-/* .close-btn {
+.close-btn {
   background: transparent;
   font-size: 25px;
   position: absolute;
   top: 0;
   right: 0;
-} */
+}
 
-/* @keyframes modalopen {
+@keyframes modalopen {
   from {
     opacity: 0;
   }
@@ -193,4 +193,4 @@ button:focus {
   to {
     opacity: 1;
   }
-} */
+}
