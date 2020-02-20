@@ -31,7 +31,7 @@ nav {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 }
 
 nav .logo {
@@ -121,7 +121,7 @@ button:focus {
 
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
