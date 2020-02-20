@@ -17,8 +17,7 @@ body {
 }
 
 body.show-nav {
-  
-  transform: translateX(200px);
+  transform: translate(200px);
 }
 
 nav {
