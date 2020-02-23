@@ -34,3 +34,7 @@ button {
   padding: 8px 10px;
   margin: 0;
 }
+
+input[type='text'] {
+  width: 300px;
+}
