@@ -4,3 +4,9 @@ const search = document.getElementById('search'),
   mealsEl = document.getElementById('meals'),
   resultHeading = document.getElementById('result-heading'),
   single_mealEl = document.getElementById('single-meal');
+
+
+
+
+   //Even Listeners
+   submit.addEventListener('submit', searchMeal)
