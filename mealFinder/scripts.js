@@ -48,4 +48,6 @@ function searchMeal(e) {
 }
 
    //Even Listeners
-   submit.addEventListener('submit', searchMeal)
+   submit.addEventListener('submit', searchMeal);
+
+  mealsEl.addevenlister 
