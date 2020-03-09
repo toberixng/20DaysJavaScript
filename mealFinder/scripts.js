@@ -53,9 +53,10 @@ function getMealById(mealID) {
     .then(res => res.json())
     .then(data => {
       const meal = data.meals[0];
-
+      console.log(meal)
       addMealToDOM(meal);
     });
+    
 }
 
 // Fetch random meal from API
