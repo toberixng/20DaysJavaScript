@@ -87,7 +87,7 @@ input[type='number'] {
   width: 100%;
 }
 
-/* .btn {
+.btn {
   cursor: pointer;
   background-color: #9c88ff;
   box-shadow: var(--box-shadow);
@@ -98,7 +98,7 @@ input[type='number'] {
   margin: 10px 0 30px;
   padding: 10px;
   width: 100%;
-} */
+}
 
 /* .btn:focus,
 .delete-btn:focus {
