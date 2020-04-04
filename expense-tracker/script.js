@@ -15,27 +15,58 @@ const dummyTransactions = [
 
 const transactions = dummyTransactions;
 
-function addTransactionToDOM (transactions){
-  const sign = transactions.amount < 0 ? '-' : '+';
-  
+// Add transactions to DOM list
+function addTransactionDOM(transaction) {
+  // Get sign
+  const sign = transaction.amount < 0 ? '-' : '+';
+
   const item = document.createElement('li');
 
-  item.classList.add(transactions.amount < 0 ? 'minus' : 'plus');
+  // Add class based on value
+  item.classList.add(transaction.amount < 0 ? 'minus' : 'plus');
 
   item.innerHTML = `
-  ${transactions.text} 
-  <span>${sign}${Math.abs(transactions.amount)}</span>
-  <button class="delete-btn">x</button>
-  `
-  
-  list.appendChild(item)
+    ${transaction.text} <span>${sign}${Math.abs(
+    transaction.amount
+  )}</span> <button class="delete-btn" onclick="removeTransaction(${
+    transaction.id
+  })">x</button>
+  `;
 
-};
-
-function init(){
-  list.innerHTML = '';
-
-  transactions.forEach(addTransactionToDOM);
+  list.appendChild(item);
 }
 
-init()
+// Update the balance, income and expense
+function updateValues() {
+  const amounts = transactions.map(transaction => transaction.amount);
+
+  const total = amounts.reduce((accu, item) => (accu += item), 0).toFixed(2);
+
+  const income = amounts
+    .filter(amount => amount > 0)
+    .reduce((accu, item) => (accu += item), 0)
+    .toFixed(2);
+
+  const expense = (amounts
+    .filter(amount => amount < 0)
+    .reduce((accu, item) => (accu += item), 0) * -1)
+    .toFixed(2);
+
+    // console.log(`Expense: ${expense} Income: ${income} Total: ${total} Individual Amount: ${amounts}`)
+  
+    balance.innerText = `$${total}`;
+    money_plus.innerText = `$${income}`;
+    money_minus.innerText = `$${expense}`;
+}
+
+
+// Init app
+function init() {
+  list.innerHTML = '';
+
+  transactions.forEach(addTransactionDOM);
+  updateValues();
+}
+
+init();
+
