@@ -14,7 +14,7 @@ const dummyTransactions = [
   { id: 4, text: 'Camera', amount: 150 }
 ];
 
-const transactions = dummyTransactions;
+let transactions = dummyTransactions;
 
 
 // Add Transaction manually
@@ -30,15 +30,21 @@ function addTransaction(e){
       text: text.value,
       amount: +amount.value
     }
-    console.log(transaction)
+    transactions.push(transaction);
+
+    addTransactionDOM(transaction);
+
+    updateValues()
+
+    text.value = '';
+    amount.value = '';    
   }
 };
 
-// Genenrate Random ID
-function generateID(){
-  return Math.floor(Math.random() * 1000000)
+// Generate random ID
+function generateID() {
+  return Math.floor(Math.random() * 100000000);
 }
-
 
 // Add transactions to DOM list
 function addTransactionDOM(transaction) {
@@ -84,6 +90,13 @@ function updateValues() {
     money_minus.innerText = `$${expense}`;
 }
 
+// Remove transaction by ID
+function removeTransaction(id) {
+  transactions = transactions.filter(transaction => transaction.id !== id);
+
+  init();
+}
+
 
 // Init app
 function init() {
@@ -93,7 +106,9 @@ function init() {
   updateValues();
 }
 
+init();
+
 form.addEventListener('submit', addTransaction)
 
-init();
+
 
