@@ -6,6 +6,7 @@ const form = document.getElementById('form');
 const text = document.getElementById('text');
 const amount = document.getElementById('amount');
 
+
 const dummyTransactions = [
   { id: 1, text: 'Flower', amount: -20 },
   { id: 2, text: 'Salary', amount: 300 },
@@ -14,6 +15,30 @@ const dummyTransactions = [
 ];
 
 const transactions = dummyTransactions;
+
+
+// Add Transaction manually
+function addTransaction(e){
+  e.preventDefault();
+  
+
+  if(text.value.trim() === '' || amount.value.trim() === ''){
+    alert('Please Enter Text and Amount');
+  } else {
+    const transaction = {
+      id: generateID(),
+      text: text.value,
+      amount: +amount.value
+    }
+    console.log(transaction)
+  }
+};
+
+// Genenrate Random ID
+function generateID(){
+  return Math.floor(Math.random() * 1000000)
+}
+
 
 // Add transactions to DOM list
 function addTransactionDOM(transaction) {
@@ -67,6 +92,8 @@ function init() {
   transactions.forEach(addTransactionDOM);
   updateValues();
 }
+
+form.addEventListener('submit', addTransaction)
 
 init();
 
